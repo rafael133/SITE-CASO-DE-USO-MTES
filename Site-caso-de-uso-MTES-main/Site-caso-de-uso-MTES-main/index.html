@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UML — Diagrama de Casos de Uso</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="conteudo">
+    <header>
+        <h1 style="text-align: center; font-size: 50px;">UML — Diagrama de Casos de Uso</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="alunos.html">Alunos</a></li>
+          </ul>
+          
+
+    </header>
+   
+    
+        
+    
+
+    <div id="pi">
+        <p>O diagrama de Casos de Uso auxilia no levantamento dos requisitos funcionais do sistema, descrevendo um conjunto de funcionalidades do sistema e suas interações com elementos externos e entre si.</p>
+
+        <p><b>Cenários:</b> quando falamos de casos de uso, temos que ter em mente o conceito de cenários, que seriam instâncias de casos de uso.</p>
+
+        <p style="color: #757575;">&#8618; Um cenário pode ser compreendido como uma sequência de passos que descreve uma interação entre um usuário e o sistema.</p>
+    </div>
+
+    <img id="Ft1" src="img/Ft1.png" alt="Ft1" style="width: 600px; height: 500px;">
+
+    <p style="color: #757575; margin-left: 30px;">Típico cenário de um diagrama de Casos de Uso</p>
+
+    <p style="font-size: 25px; margin: 60px 250px 0px 250px;">Em resumo, os diagramas de Casos de Uso:
+        <br>
+        <br>
+        &#9679; auxiliam na comunicação entre o cliente e os analistas.
+        <br>
+        <br>
+        &#9679; apresentam as principais funcionalidades do sistema com foco no cliente.
+        <br>
+        <br>
+        &#9679; descrevem cenários de interação entre as partes internas/externas de um sistema, com foco no usuário.
+        <br>
+        <br>
+        &#9679; é muito utilizado na fase de levantamento de requisitos.
+        <br>
+        <br>
+    </p>
+
+    <h2 style="margin-left: 30px; font-size: 40px;"><b>Elementos</b></h2>
+
+    <p style="margin-left: 250px;margin-right: 250px; font-size: 25px;">Os principais elementos de um diagrama de casos de uso são:
+        <br>
+        <br>
+        &#9679; <b>Atores</b>: boneco com rótulo que representa um humano ou um sistema computacional.
+    </p>
+        
+    <img id="Ft2" src="img/Ft2.png" alt="Ft2" style="width: 150px; height: 170px;">
+
+    <p style="color: #757575; margin-left: 30px;">Ator</p>
+    
+    <p style="margin-left: 250px;margin-right: 250px; font-size: 25px;line-height: 1.3;">&#9679; <b>Caso de Uso</b>: elipse com rótulo que representa uma funcionalidade do sistema, sendo que esta pode estar estruturada em outra(s). Um caso de uso pode ser concreto, quando é iniciado diretamente por um ator, ou abstrato, quando é uma extensão de um outro caso de uso. Além disso há casos de uso primários e secundários. O primeiro representa os objetivos dos atores, já o segundo são funcionalidades do sistema que precisam existir para que este funcione corretamente.</p>
+
+    <img id="Ft3" src="img/Ft3.png" alt="Ft3" style="width: 150px; height: 90px;">
+
+    <p style="color: #757575; margin-left: 27px;">Caso de Uso</p>
+
+    <p style="margin-left: 250px;margin-right: 250px; font-size: 25px;">&#9679; <b>Relacionamentos</b>: auxiliam na descrição dos casos de uso, podendo ser: entre um ator e um caso de uso, entre atores e entre casos de uso.
+    </p>
+
+    <img id="Ft4" src="img/Ft4.png" alt="Ft4" style="width: 150px; height: 90px;">
+
+    <p style="color: #757575; margin-left: 30px;">Relacionamento</p>
+    <br>
+    <br>
+
+    <h2 style="margin-left: 30px; font-size: 40px;"><b>Tipos de Relacionamentos</b></h2>
+
+    <p style="margin-left: 250px;margin-right: 250px; font-size: 25px; margin-top: 20px;">&#9679; <b>Relacionamento de Comunicação ou Associação</b>: representa a interação entre um ator e um caso de uso por meio de mensagens. É representado por uma linha sólida.</p>
+
+    <img id="Ft5" src="img/Ft5.png" alt="Ft5" style="width: 400px; height: 200px;">
+
+    <p style="color: #757575; margin-left: 30px; font-size: 25px;">&#8618; Funcionalidade do ponto de vista do usuário.</p>
+
+    <p style="margin-left: 250px;margin-right: 250px; margin-top: 30px; font-size: 25px;line-height: 1.3;">&#9679; <b>Relacionamento de Inclusão</b>: utilizado quando um comportamento se repete em mais de um caso de uso. Por exemplo, num internet banking, um cliente que vai realizar um pagamento precisa se logar, assim como um cliente que vai visualizar o saldo também precisa se logar.</p>
+
+    <img id="Ft6" src="img/Ft6.png" alt="Ft6" style="width: 450px; height: 260px;">
+
+    <p style="color: #757575; margin-left: 250px; margin-right: 250px; font-size: 25px;">&#8618; Logar é essencial para pagar fatura e para ver saldo. Ou Logar é parte de pagar fatura e também é parte de ver saldo.</p>
+
+    <p style="margin-left: 250px; margin-top: 30px; margin-right: 250px; font-size: 25px;line-height: 1.3;">&#9679; <b>Relacionamento de Extensão</b>: utilizado quando se deseja modelar um relacionamento alternativo. Por exemplo, ao "cadastrar usuário" num sistema de forum, podemos "cadastrar um administrador" ou "cadastrar um moderador".</p>
+
+    <img id="Ft7" src="img/Ft7.png" alt="Ft7" style="width: 450px; height: 260px;">
+
+    <p style="color: #757575; margin-left: 250px; margin-right: 250px; font-size: 25px;">&#8618; Cadastrar administrador e Cadastrar moderador são extensões de cadastrar usuário. Eles não são essenciais, só contém eventos adicionais sob certas condições.</p>
+
+    <p style="margin-left: 250px; margin-top: 30px; margin-right: 250px; font-size: 25px;line-height: 1.3;">&#9679; <b>Relacionamento de Herança</b>: é um relacionamento entre atores, utilizado quando queremos representar uma especialização/generalização. Na figura a seguir, vendedor é especialização de pessoa (ou pessoa é generalização de vendedor), é representado por um alinha com um triângulo.</p>
+
+    <img id="Ft8" src="img/Ft8.png" alt="Ft8" style="width: 350px; height: 400px;">
+
+    <p style="color: #757575; margin-left: 250px; margin-right: 250px; font-size: 25px;">&#8618; Os casos de uso de pessoa são também casos de uso de vendedor. Vendedor tem seus próprios casos de uso.</p>
+    
+    <p style="margin-left: 290px; margin-top: 30px; margin-right: 250px; font-size: 40px;line-height: 1.3;">Resumindo:</p>
+
+    <img id="Ft9" src="img/Ft9.png" alt="Ft9" style="width: 650px; height: 300px;">
+    <br>
+    <br>
+    
+    <h2 style="margin-left: 30px; font-size: 40px;"><b>Praticando</b></h2>
+   
+    <p style="margin-left: 250px; margin-top: 30px; margin-right: 250px; font-size: 25px;line-height: 1.3;">Como exemplo podemos imaginar uma loja on-line, onde podemos ter os cenários "comprar um produto", "cancelar compra", "acompanhar pedido", entre outros. Mas vamos nos concentrar no cenário "comprar produto", o qual podemos descrever sucintamente como:</p>
+
+    <p style="color: #757575; margin-left: 250px; margin-right: 250px; font-size: 25px;">&#8618; O cliente navega pelo catálogo e adiciona os itens desejados ao carrinho de compras. Quando o cliente desejar pagar, ele preenche os dados para entrega e da forma de pagamento, confirmando a compra no final. O sistema verifica o cartão de crédito, tenta passar a compra no cartão e confirma a venda com o envio de um e-mail.</p>
+
+    <p style="margin-left: 250px; margin-top: 30px; margin-right: 250px; font-size: 25px;line-height: 1.3;">Este é um de muitos cenários que podem ocorrer, tendo em vista que a verificação do cartão pode dar não autorizado, gerando um segundo cenário. Seu cliente pode ser um cliente regular, não necessitando preencher os dados de entrega ou mesmo do cartão, isso já seria um terceiro cenário.</p>
+
+    <p style="margin-left: 250px; margin-top: 30px; margin-right: 250px; font-size: 25px;line-height: 1.3;">Mas repare que a essência desses três cenários é que o usuário tem o mesmo objetivo: <b>comprar um produto</b>, nem sempre o usuário consegue, mas o objetivo permanece.</p>
+
+    <p style="margin-left: 250px; margin-top: 30px; margin-right: 250px; font-size: 25px;line-height: 1.3;">Os cenários devem se concentrar na intenção do ator, não na mecânica de como o ator utilizará o sistema. Por isso, detalhes da implementação da interface de usuário não devem ser descritas. Até mesmo porque a etapa de fazer digramas de casos de uso precede a de projetar a interface de usuário.</p>
+
+    <img id="Ft10" src="img/Ft10.png" alt="Ft10" style="width: 700px; height: 500px;">
+
+    <p style="margin-left: 250px; margin-top: 30px; margin-right: 250px; font-size: 25px;line-height: 1.3;">
+        Veja que foram utilizados os casos de uso "informar endereço" e "preencher dados do cartão de crédito" como << extends >>, pois só haverá necessidade de informá-los se o cliente for novo, ou se ele quiser alterar uma dessas informações.
+        <br>
+        <br>
+        Repare também que os casos de uso "verificar dados do cartão de crédito" e "faturar compra" são relacionados como << include >>, pois sempre que for informado um novo cartão será necessário validar esse cartão e sempre que for finalizada uma compra, ela deve ser faturada.
+        <br>
+        <br>
+        Veja que temos dois atores no diagrama, o cliente e o sistema. Os casos de uso do sistema são abstratos, pois dependem do cliente interagir com seus casos de uso para que os do sistema possam ser acionados.
+    </p>
+    <br>
+    <br>
+    <h2 style="margin-left: 30px; font-size: 40px;"><b>Conteúdo Adicional</b></h2>
+    <a href="https://docente.ifrn.edu.br/givanaldorocha/disciplinas/engenharia-de-software-licenciatura-em-informatica/diagrama-de-caso-de-uso-tecnico" target="_blank" style="margin-left: 30px; font-size: 25px;">Diagrama de Caso de Uso/PDF</a>
+    <br>
+    <br>
+    <a href="https://www.youtube.com/watch?v=ePX-S4Leq7Y" target="_blank" style="margin-left: 30px; font-size: 25px;">Curso de UML - O que são Casos de Uso/Vídeo</a>
+    <br>
+    <br>
+    <a href="https://www.youtube.com/watch?v=tezLX9quOVc" target="_blank" style="margin-left: 30px; font-size: 25px;">Curso de UML - Diagrama de Casos de Uso - Exemplo Básico/Vídeo</a>
+</div>
+    
+    
+    <footer>
+        <br>
+        <br>
+        <div id="rod1">
+            <p style="font-size: 30px; margin-left: 20px;"><b>Professor</b>:</p>
+            <p style="font-size: 25px; margin-left: 30px;">Alexandre Neves Louzada<br></p>
+        </div>
+        
+        <div id="rod2">
+            <p style="font-size: 30px; margin-left: 20px;"><b>Disciplina</b>:</p>
+            <p style="font-size: 25px; margin-left: 30px;">Metodos e Tecnicas de Engenharia de Software<br></p>
+            <p style="font-size: 25px; margin-left: 30px;">2020/2º Semestre</p>
+            <br>
+        </div>
+        
+        </p>
+
+        
+    </div>
+       
+
+        
+
+    </footer>
+
+
+
+    
+
+
+
+
+
+
+
+
+</body>
+</html>

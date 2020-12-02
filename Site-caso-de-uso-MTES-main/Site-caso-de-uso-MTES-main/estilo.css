@@ -1,0 +1,142 @@
+body {
+  background-image: url("img/landscape.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Assistant', sans-serif;
+  
+}
+ 
+div#pi{
+    font-size: 25px;
+    margin: 60px 250px 30px 250px;
+    
+
+}
+header {
+    padding-top: 60px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+    
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    overflow: hidden;
+    background-color:  #121212;
+    text-align: center;
+
+  }
+  
+  li {
+    float: left;
+    
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 26px;
+    text-decoration: none;
+    
+  }
+
+  
+  
+  li a:hover {
+    background-color: #111;
+  }
+
+  li {
+    border-right: 1px solid #bbb;
+  }
+  
+  li:last-child {
+    border-right: none;
+  }
+
+  
+img#Ft1{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+img#Ft2{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+img#Ft3{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+img#Ft4{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+img#Ft5{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+img#Ft6{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+img#Ft7{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+img#Ft8{
+    margin-left: 35px;
+    margin-top: 10px;
+}
+img#Ft9{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+img#Ft10{
+    margin-left: 70px;
+    margin-top: 10px;
+}
+
+div#rod1{
+    
+    left: 400px;
+    color: white;
+   
+   
+    
+}
+
+div#rod2{
+    
+    left: 800px;
+    color: white;
+    
+    
+}
+
+footer{
+  text-align: center;
+	background-color:#1abc9c;
+	margin: auto;
+	max-width: 90%;
+	box-sizing: border-box;
+}
+
+.conteudo {
+
+  text-align: center;
+	background-color:white;
+	margin: auto;
+	max-width: 90%;
+  box-sizing: border-box;
+  
+}
